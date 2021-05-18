@@ -345,6 +345,9 @@ header {
 
 
 
+/* About Me Section */
+
+
 .about-me {
     max-width: 1000px;
     margin: 0 auto;
@@ -475,6 +478,30 @@ header {
 
 /* Individual portfolio item styles */
 
+@media (min-width: 600px) {
+    .section__subtitle--intro-portfolio {
+        padding-right: 1.5em;;
+    }
+}
+
+@media (min-width: 700px) {
+    .section__subtitle--intro-portfolio {
+        padding-right: 3em;;
+    }
+}
+
+@media (min-width: 800px) {
+    .section__subtitle--intro-portfolio {
+        padding-right: 5em;;
+    }
+}
+
+@media (min-width: 1050px) {
+    .section__subtitle--intro-portfolio {
+        padding-right: 25vw;;
+    }
+}
+
 .portfolio-item-individual {
     padding: 0 2em 2em;
     max-width: 1000px;
@@ -483,6 +510,14 @@ header {
 
 .portfolio-item-individual p {
     max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.portfolio-item-individual__img--mobile {
+    max-height: 50vh;
     margin-left: auto;
     margin-right: auto;
 }
