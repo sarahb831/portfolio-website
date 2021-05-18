@@ -516,6 +516,12 @@ header {
     margin-bottom: 50px;
 }
 
+.portfolio-item-individual__img {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+}
+
 .portfolio-item-individual__img--mobile {
     max-height: 50vh;
     margin-left: auto;
