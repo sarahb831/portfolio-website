@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- support different device sizes cleanly -->
+        <title>Sarah's Portfolio Website</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css"> <!-- normalize for different browsers --->
+        <link rel="stylesheet" 
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"   
+            integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" 
+            crossorigin="anonymous" /> <!-- for access to all Font-Awesome icons -->
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Raleway&display=swap" rel="stylesheet"> 
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <img src="img/devsarah.png" alt="">
+            </div>
+            <button class="nav-toggle" aria-label="toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="index.html#testimonials" class="nav__link">Testimonials</a></li>
+                    <li class="nav__item"><a href="index.html#about" class="nav__link">About me</a></li>
+                    <li class="nav__item"><a href="index.html#work" class="nav__link">My work</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section class="intro">
+            <h1 class="section__title section__title--intro">
+                <strong>Digital Concierge Platform</strong>
+            </h1>
+            <p class="section__subtitle section__subtitle--intro section__subtitle--intro-portfolio">
+                R Community's Web App</p>
+            <img src="img/RCommunitywebsite.jpg" alt=""
+                class="intro__img">
+        </section>
+
+        <div class="portfolio-item-individual">
+            <p>I took over this web application after its initial release, improving
+                 performance with streamlined queries and ensuring consistent results. 
+                 This is a responsive single-page application.
+            </p>
+            <img src="img/rCommunityMobile.jpg" alt="" 
+                class="portfolio-item-individual__img--mobile">
+            
+            <p>  
+                I further enhanced the application with an intuitive and easy-to-use 
+                auto-suggest search feature. Shown below are desktop and mobile examples.
+            </p>
+            <img src="img/rCSearchDesktop.jpg" alt="" 
+                class="portfolio-item-individual__img">
+            <img src="img/rCommunitySearch.jpg" alt="" 
+                class="portfolio-item-individual__img--mobile">
+
+            <p>I also designed and implemented a horizontal scroll feature to replace 
+                buttons and optimize the use of the mobile display for results. (See image below.)</p>
+
+                <img src="img/rCommunityHorizScroll.jpg" alt="" 
+                class="portfolio-item-individual__img--mobile">
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <a href="mailto:smbeauchamp885@gmail.com" class="footer__link">smbeauchamp885@gmail.com</a>
+            <ul class="social-list">
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://linkedin.com/in/sarahmbeauchamp" target= "_blank">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://github.com/sarahb831" target= "_blank">
+                        <i class="fab fa-github-alt"></i>
+                    </a>
+                </li>
+            </ul>
+        </footer>
+
+        <script src="js/index.js"></script>
+    </body>
+</html>
