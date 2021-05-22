@@ -282,6 +282,10 @@ header {
         z-index: 2;
     }    
 
+    .intro__img--primary {
+        width: 250px;
+    }
+
     .section__subtitle--intro {
         align-self: start;
         grid-column: -1 / 1;
@@ -482,6 +486,11 @@ header {
     .section__subtitle--intro-portfolio {
         padding-right: 1.5em;;
     }
+
+    .section__subtitle--intro-portfolio-long {
+        padding-left: 50vw;
+        text-align: left;
+    }
 }
 
 @media (min-width: 700px) {
@@ -506,6 +515,7 @@ header {
     padding: 0 2em 2em;
     max-width: 1000px;
     margin: 0 auto;
+    box-shadow: var(--bs);
 }
 
 .portfolio-item-individual p {
@@ -520,10 +530,12 @@ header {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 50px;
+    box-shadow: var(--bs);
 }
 
 .portfolio-item-individual__img--mobile {
     max-height: 50vh;
     margin-left: auto;
     margin-right: auto;
+    box-shadow: var(--bs);
 }
