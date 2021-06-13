@@ -5,17 +5,20 @@
 }
 
 :root {
-    --ff-primary: 'Raleway', sans-serif;
+    /*--ff-primary: 'Raleway', sans-serif;
     --ff-secondary: 'Montserrat', sans-serif;
-
+*/
+    --ff-primary: sans-serif;
+    --ff-secondary: serif;
      
     --fw-reg: 300;
-    --fw-bold: 900;
+    --fw-bold: 700;
     
     --clr-light: #fff;
     --clr-dark: #303030;
     --clr-accent: #689ed0;
     --clr-gray: #605656;
+    --clr-dark-accent: #374796;
     
     --fs-h1: 3rem;
     --fs-h2: 2.25rem;
@@ -517,24 +520,66 @@ header {
     margin: 0 auto;
 }
 
+.portfolio-item-individual-subtitle {
+    font-weight: bold;
+    margin-top: -30px;
+    margin-bottom: -30px;
+}
+
+.emphasis {
+ color: var(--clr-dark-accent);
+ font-weight:bolder;
+}
+
+.portfolio-item-individual-link {
+    display: block;
+    text-align: center;
+    font-size: var(--fs-body);
+    font-weight:  var(--fw-bold);
+    color: var(--clr-dark-accent);
+    text-decoration: underline;
+    cursor: pointer;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px; 
+}
+
+a+a.portfolio-item-individual-link {
+    margin-top: 20px;
+}
+
+.portfolio-item-individual-link:hover {
+    color: var(--clr-accent);
+    font-size: var(--fs-h3);
+}
+
+.portfolio-item-individual-link:active,
+.portfolio-item-individual-link:focus {
+    outline: 0;
+    border: none;
+}
+
 .portfolio-item-individual p {
     max-width: 600px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    /*margin-top: 30px;
+    margin-bottom: 30px; */
 }
 
 .portfolio-item-individual__img {
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 50px;
+    margin-bottom: 20px; 
     box-shadow: var(--bs);
 }
 
 .portfolio-item-individual__img--mobile {
     max-height: 50vh;
     margin-left: auto;
-    margin-right: auto;
+    margin-right: auto; 
+    margin-top: 30px;
+    margin-bottom: 30px;
     box-shadow: var(--bs);
 }
